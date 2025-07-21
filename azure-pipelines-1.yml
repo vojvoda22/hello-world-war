@@ -10,13 +10,6 @@ pool:
   name: onboarding-pool
 
 steps:
-- task: JavaToolInstaller@0
-  displayName: 'Install or select Java 11'
-  inputs:
-    versionSpec: '11'
-    jdkArchitectureOption: 'x64'
-    jdkSourceOption: 'PreInstalled'
-
 - task: Maven@3
   displayName: 'Build using Maven'
   inputs:
