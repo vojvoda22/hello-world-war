@@ -27,6 +27,7 @@ steps:
     repository: 'djordjev2/azure-test1'
     command: 'buildAndPush'
     Dockerfile: '**/Dockerfile'
+    tags: 'latest,$(Build.BuildId)'
 - task: PublishBuildArtifacts@1
   inputs:
     PathtoPublish: '$(Build.ArtifactStagingDirectory)'
